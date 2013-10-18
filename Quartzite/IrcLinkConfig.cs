@@ -39,6 +39,11 @@ namespace Quartzite
         public String Name { get; set; }
 
         /// <summary>
+        /// The numeric value to use for the server on the network
+        /// </summary>
+        public String Numeric { get; set; }
+
+        /// <summary>
         /// A short description of the server to be used in map/links. Examples: "SeersIRC - Even Freedom needs a home.", "SeersIRC Services"
         /// </summary>
         public String Description { get; set; }
@@ -60,7 +65,7 @@ namespace Quartzite
         #endregion
 
         #region Constructor
-        public IrcLinkConfig(String remoteHost, int port, String password,  String name, String description, String version)
+        public IrcLinkConfig(String remoteHost, int port, String password,  String name, String numeric, String description, String version)
         {
             RemoteHost = remoteHost;
             LocalHost = String.Empty;
@@ -68,6 +73,7 @@ namespace Quartzite
             Ssl = true;
             Password = password;
             Name = name;
+            Numeric = numeric;
             Description = description;
             Version = version;
 
