@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Net;
 using System.Net.Sockets;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
@@ -30,11 +31,20 @@ namespace Quartzite
 
 
         /// <summary>
-        /// Constructor, sets up networking and logging
+        /// Constructor, sets up networking
         /// </summary>
         public Network()
         {
             Client = new TcpClient();
+        }
+
+        /// <summary>
+        /// Constructor, now with binding!
+        /// </summary>
+        /// <param name="localHost">Address to bind on</param>
+        public Network(String localHost)
+        {
+            Client = new TcpClient(new IPEndPoint(IPAddress.Parse(localHost),0));
         }
 
         #endregion
