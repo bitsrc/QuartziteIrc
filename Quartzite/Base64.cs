@@ -1,20 +1,11 @@
 ﻿using System;
 using System.Net;
+using System.Collections.Generic;
 
 namespace Quartzite
 {
     public class Base64
     {
-        public static String EncodeTimestamp(int timestamp)
-        {
-            return "";
-        }
-
-        public static int DecodeTimestamp(String timestamp)
-        {
-            return 0;
-        }
-
         public static String EncodeIp(string ip)
         {
             IPAddress address = IPAddress.Parse(ip);
