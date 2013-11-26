@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Quartzite
 {
-    public class IrcLinkConfig
+    public class IrcServicesConfig
     {
         #region Properties
         /// <summary>
@@ -65,7 +65,7 @@ namespace Quartzite
         #endregion
 
         #region Constructor
-        public IrcLinkConfig(String remoteHost, int port, String password,  String name, String numeric, String description, String version)
+        public IrcServicesConfig(String remoteHost, int port, String password,  String name, String numeric, String description, String version)
         {
             RemoteHost = remoteHost;
             LocalHost = String.Empty;
