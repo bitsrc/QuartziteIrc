@@ -25,9 +25,19 @@ namespace Quartzite
         /// </summary>
         private IrcParser Parser;
 
+        /// <summary>
+        /// Known channels
+        /// </summary>
         private Dictionary<String, Channel> Channels;
 
+        /// <summary>
+        /// Known users
+        /// </summary>
         private Dictionary<String, User> Users;
+
+        /// <summary>
+        /// Users emulated
+        /// </summary>
         private Dictionary<String, PseudoUser> PseudoUsers;
 
         private Logger logger = LogManager.GetCurrentClassLogger();
@@ -153,6 +163,45 @@ namespace Quartzite
 
         }
 
+        public void handleStats(String source, String[] args)
+        {
+
+        }
+
+        public void handleSjoin(String source, String[] args)
+        {
+
+        }
+
+        public void handleJoin(String source, String[] args)
+        {
+
+        }
+
+        public void handlePart(String source, String[] args)
+        {
+
+        }
+
+        public void handleKick(String source, String[] args)
+        {
+
+        }
+
+        public void handleMode(String source, String[] args)
+        {
+
+        }
+
+        public void handleInvite(String source, String[] args)
+        {
+
+        }
+
+        public void handleSajoin(String source, String[] args)
+        {
+
+        }
         #endregion
     }
 }
